@@ -38,13 +38,14 @@ class UserCreate(UserBase):
     password: str
 
 class BudgetCreate(BudgetBase):
-    pass
+    user_id: Optional[int] = None
 
 class RevenueCreate(RevenueBase):
-    pass
+    user_id: Optional[int] = None
 
 class ExpenseCreate(ExpenseBase):
     tag_ids: Optional[List[int]] = []
+    user_id: Optional[int] = None
 
 class CategoryCreate(CategoryBase):
     pass

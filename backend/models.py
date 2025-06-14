@@ -6,8 +6,8 @@ from database import Base
 expense_tag_table = Table(
     "expense_tags",
     Base.metadata,
-    Column("expense_id", Integer, ForeignKey("expenses.id")),
-    Column("tag_id", Integer, ForeignKey("tags.id"))
+    Column("expense_id", Integer, ForeignKey("expenses.id"), primary_key=True),
+    Column("tag_id", Integer, ForeignKey("tags.id"), primary_key=True)
 )
 
 class User(Base):

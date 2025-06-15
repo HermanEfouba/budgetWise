@@ -1,4 +1,4 @@
-# 💰 BudgetWise - Application de Gestion de Budget Personnel
+#  BudgetWise - Application de Gestion de Budget Personnel
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
@@ -7,9 +7,9 @@
 
 Une application web moderne et intuitive pour gérer votre budget personnel, suivre vos revenus et dépenses, et visualiser vos statistiques financières.
 
-## ✨ Fonctionnalités
+##  Fonctionnalités
 
-### 🎯 Fonctionnalités Principales
+### Fonctionnalités Principales
 - **Gestion des Revenus** : Ajout, modification et suppression de revenus
 - **Gestion des Dépenses** : Suivi détaillé des dépenses par catégorie
 - **Budget Mensuel** : Définition et suivi de budgets mensuels
@@ -18,18 +18,18 @@ Une application web moderne et intuitive pour gérer votre budget personnel, sui
 - **Tags** : Système de tags pour une meilleure organisation
 - **Graphiques** : Visualisation des données avec Chart.js
 
-### 🔐 Sécurité
+### Sécurité
 - **Authentification JWT** : Système d'authentification sécurisé
 - **Chiffrement des mots de passe** : Utilisation de bcrypt
 - **Validation des données** : Validation côté serveur avec Pydantic
 
-### 📊 Statistiques et Rapports
+###  Statistiques et Rapports
 - **Solde en temps réel** : Calcul automatique du solde actuel
 - **Statistiques mensuelles** : Revenus, dépenses et balance par mois
 - **Répartition par catégorie** : Graphiques en secteurs des dépenses
 - **Transactions récentes** : Historique des dernières opérations
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 ### Backend
 - **FastAPI** : Framework web moderne et rapide
@@ -51,7 +51,7 @@ Une application web moderne et intuitive pour gérer votre budget personnel, sui
 - **flake8** : Linting du code
 - **black** : Formatage automatique du code
 
-## 🚀 Installation et Configuration
+##  Installation et Configuration
 
 ### Prérequis
 - Python 3.11+
@@ -98,7 +98,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 # L'application sera accessible sur http://localhost:8000
 ```
 
-## 📁 Structure du Projet
+##  Structure du Projet
 
 ```
 budgetwise/
@@ -135,7 +135,7 @@ budgetwise/
 └── README.md                 # Documentation
 ```
 
-## 🧪 Tests
+## Tests
 
 ### Lancer les tests
 ```bash
@@ -152,14 +152,25 @@ flake8 .
 black .
 ```
 
-## 🚀 Déploiement
+##  Déploiement
 
 ### Déploiement sur Render
 
 1. **Préparer l'application**
+
    - Assurez-vous que tous les tests passent
    - Configurez les variables d'environnement de production
+   Si vous n'avez pas encore installé `flake8`, vous pouvez l'ajouter avec la commande suivante :
 
+   ```bash
+   pip install flake8
+   ```
+
+   Ensuite, relancez la commande :
+
+   ```bash
+   flake8 .
+   ```
 2. **Configuration Render**
    - Créez un nouveau service Web sur Render
    - Connectez votre repository GitHub
@@ -174,12 +185,12 @@ SECRET_KEY=your-secret-key
 ### CI/CD avec GitHub Actions
 
 Le pipeline CI/CD automatique :
-- ✅ Exécute les tests sur chaque push
-- ✅ Vérifie le style de code avec flake8
-- ✅ Formate le code avec black
-- ✅ Déploie automatiquement sur la branche main
+-  Exécute les tests sur chaque push
+-  Vérifie le style de code avec flake8
+-  Formate le code avec black
+-  Déploie automatiquement sur la branche main
 
-## 📖 API Documentation
+##  API Documentation
 
 Une fois l'application lancée, la documentation interactive de l'API est disponible sur :
 - **Swagger UI** : http://localhost:8000/docs
@@ -202,7 +213,7 @@ Une fois l'application lancée, la documentation interactive de l'API est dispon
 - `POST /expenses/` - Ajouter une dépense
 - `GET /expenses/` - Lister les dépenses
 
-## 🤝 Contribution
+##  Contribution
 
 Les contributions sont les bienvenues ! Voici comment contribuer :
 
@@ -218,28 +229,28 @@ Les contributions sont les bienvenues ! Voici comment contribuer :
 - Mettez à jour la documentation si nécessaire
 - Assurez-vous que tous les tests passent
 
-## 📝 Licence
+##  Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-## 👥 Auteurs
+##  Auteurs
 
-- **Votre Nom** - *Développeur principal* - [VotreGitHub](https://github.com/votre-username)
+- **Herman EFOUBA** - *Développeur principal* - [MonGitHub](https://github.com/HermanEfouba/budgetWise/commits?author=HermanEfouba)
 
-## 🙏 Remerciements
+##  Remerciements
 
 - [FastAPI](https://fastapi.tiangolo.com/) pour le framework backend
 - [Bootstrap](https://getbootstrap.com/) pour le framework CSS
 - [Chart.js](https://www.chartjs.org/) pour les graphiques
 - [Font Awesome](https://fontawesome.com/) pour les icônes
 
-## 📞 Support
+##  Support
 
 Si vous avez des questions ou des problèmes :
-- 📧 Email : votre.email@example.com
-- 🐛 Issues : [GitHub Issues](https://github.com/votre-username/budgetwise/issues)
-- 💬 Discussions : [GitHub Discussions](https://github.com/votre-username/budgetwise/discussions)
+-  Email : votre.email@example.com
+-  Issues : [GitHub Issues](https://github.com/votre-username/budgetwise/issues)
+-  Discussions : [GitHub Discussions](https://github.com/votre-username/budgetwise/discussions)
 
 ---
 
-⭐ **N'oubliez pas de donner une étoile au projet si vous l'avez trouvé utile !**
+**N'oubliez pas de donner une étoile au projet si vous l'avez trouvé utile !**

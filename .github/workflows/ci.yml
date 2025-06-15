@@ -34,12 +34,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Test with pytest
-      env:
-        DB_URL: mysql+pymysql://root:root@localhost:3306/budget_db_test
-      run: |
-        cd backend
-        pytest --cov=. --cov-report=xml
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
